@@ -3,8 +3,8 @@
 [format]
   pretty = full
 [user]
-  name = Kostis Karantias
-  email = kkarantias@gmail.com
+  name = Marios Balamatsias
+  email = mbalamatsias@gmail.com
 [credential]
   helper = cache --timeout=3600
 [diff]
