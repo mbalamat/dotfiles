@@ -108,3 +108,6 @@ command -v go >/dev/null 2>&1 && export PATH="$PATH:$HOME/go/bin"
 [ -d $HOME/.prefix/usr/local/bin ] && export PATH="$PATH:$HOME/.prefix/usr/local/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias l="ls"
+alias ll="ls -lah"
