@@ -68,3 +68,5 @@ augroup tex_stuff
     autocmd FileType tex call SetupLatex()
     autocmd FileType plaintex setl ft=tex
 augroup END
+
+au FileType go let b:ale_fixers = ['goimports']

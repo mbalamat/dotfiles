@@ -111,3 +111,4 @@ command -v go >/dev/null 2>&1 && export PATH="$PATH:$HOME/go/bin"
 
 alias l="ls"
 alias ll="ls -lah"
+export PATH="/usr/local/sbin:$PATH"
