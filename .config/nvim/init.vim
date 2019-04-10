@@ -7,6 +7,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tomasr/molokai'
 Plug 'wincent/terminus'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 set termguicolors
