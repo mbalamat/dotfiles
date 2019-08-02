@@ -109,6 +109,7 @@ command -v go >/dev/null 2>&1 && export PATH="$PATH:$HOME/go/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export PATH="$HOME/.cargo/bin:$PATH"
 alias l="ls"
 alias ll="ls -lah"
 export PATH="/usr/local/sbin:$PATH"
