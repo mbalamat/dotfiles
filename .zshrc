@@ -115,3 +115,5 @@ alias ll="ls -lah"
 export PATH="/usr/local/sbin:$PATH"
 alias yolo="git add . && git commit -m 'YOLO' && g push origin master || echo 'Something failed during yoling git!'"
 alias k="kubectl $@"
+
+getRandomString () {perl -pe 'binmode(STDIN, ":bytes"); tr/A-Za-z0-9//dc;' < /dev/urandom | head -c 64; echo}
