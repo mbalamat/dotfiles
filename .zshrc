@@ -118,3 +118,15 @@ alias yolo="git add . && git commit -m 'YOLO' && g push origin master || echo 'S
 alias k="kubectl $@"
 
 getRandomString () {perl -pe 'binmode(STDIN, ":bytes"); tr/A-Za-z0-9//dc;' < /dev/urandom | head -c 64; echo}
+
+function rebasethis {
+  [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1 || return 1
+  [ $(pwd) = '/Users/mbalamat' ] && return 2
+  [ $(git rev-parse --git-dir) = '/Users/mbalamat/.git' ] && return 3
+  CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  if [ "$CURRENT_BRANCH" = 'master' ]; then
+    echo "ERROR: You are on branch master, do a git pull first"
+  else
+    git checkout master && git pull origin master && git checkout $CURRENT_BRANCH && git rebase master
+  fi
+}
