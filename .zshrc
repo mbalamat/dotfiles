@@ -131,6 +131,10 @@ function rebasethis {
   fi
 }
 
+function tmuxkillall {
+  tmux list-panes -s -F "#{pane_pid} #{pane_current_command}" | grep -v tmux | awk '{print $1}' | xargs kill -9
+}
+
 function decode_base64_url() {
   local len=$((${#1} % 4))
   local result="$1"
