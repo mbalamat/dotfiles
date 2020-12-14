@@ -116,6 +116,8 @@ alias ll="ls -lah"
 export PATH="/usr/local/sbin:$PATH"
 alias yolo="git add . && git commit -m 'YOLO' && g push origin master || echo 'Something failed during yoling git!'"
 alias k="kubectl $@"
+alias bcli="/Users/mbalamat/work/balena-cli/bin/balena $@"
+alias bcli-dev="/Users/mbalamat/work/balena-cli/bin/balena-dev $@"
 alias jf="cd ~/work/JF"
 alias sqlite3="/usr/local/opt/sqlite/bin/sqlite3"
 
