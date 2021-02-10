@@ -147,3 +147,6 @@ function decode_base64_url() {
   fi
   echo "$result" | tr '_-' '/+' | openssl enc -d -base64
 }
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
