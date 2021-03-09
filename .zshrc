@@ -150,3 +150,5 @@ function decode_base64_url() {
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+alias sed="gsed"
